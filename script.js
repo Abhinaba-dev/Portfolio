@@ -25,3 +25,15 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.6 });
 
 sections.forEach(section => observer.observe(section));
+
+// Analytics: track button clicks
+document.querySelectorAll('.btn').forEach(button => {
+    button.addEventListener('click', () => {
+        if (typeof gtag === "function") {
+            gtag('event', 'button_click', {
+                event_category: 'engagement',
+                event_label: button.textContent.trim()
+            });
+        }
+    });
+});

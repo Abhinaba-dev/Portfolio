@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Abhinaba Chatterjee | Portfolio</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Agriculture student and AgriTech enthusiast building smart, sustainable, and data-driven farming solutions.">
+    <meta name="keywords" content="Agriculture, AgriTech, Smart Irrigation, Python, Web Development">
+    <meta name="author" content="Your Name">
+    <link rel="canonical" href="https://yourdomain.com">
+    <meta name="theme-color" content="#2e7d32">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Abhinaba Chatterjee | Portfolio">
+    <meta property="og:description" content="Agriculture student & tech enthusiast working on smart farming solutions.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Merriweather+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#home" class="skip-link">Skip to main content</a>
+
+<nav class="navbar" role="navigation">
+    <div class="logo">Abhinaba Chatterjee</div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+    </label>
+
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#timeline">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main id="main-content">
+
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>Hi, I'm <span>Abhinaba Chatterjee</span></h1>
+            <h3>Agriculture Student • Web Developer • Cybersecurity Enthusiast</h3>
+            <p class="about-text">
+                I am a 2nd year B. Sc. Agriculture Student. I am a self-taught web Developer
+                currently learning Python. I also have a keen interest in cybersecurity. I work 
+                at the intersection of agriculture and technology, building smart, sustainable, 
+                and data-driven farming solutions.
+            </p>
+            <a href="#projects" class="btn">View Projects</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="assets/profile.jpg" alt="Profile Picture">
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section light">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">
+            <h3>🌾 Agriculture</h3>
+            <ul>
+                <li>Irrigation Management (Learning)</li>
+                <li>Crop Water Requirement</li>
+                <li>Soil & Climate Basics (Learning)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>⚙️ Technology</h3>
+            <ul>
+                <li>Python (Learning)</li>
+                <li>Web Development</li>
+                <li>AgriTech Systems (Research)</li>
+            </ul>
+        </div>
+
+        <div class="skill-card">
+            <h3>🛠 Tools</h3>
+            <ul>
+                <li>FastAPI (Learning)</li>
+                <li>Git & GitHub</li>
+                <li>Data Analysis Basics</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="timeline" class="section">
+    <h2>My Journey</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3>Started Programming</h3>
+                <p>Learning Python and web development.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3>Agriculture Student</h3>
+                <p>Studying core agricultural sciences and sustainability.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3>AgriTech Projects</h3>
+                <p>Working on smart irrigation and data-driven solutions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="projects" class="section light">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Smart Irrigation Tools(In development) </h3>
+            <p>Water requirement estimation and scheduling systems.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+
+    <form class="contact-form" method="POST" action="#">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" aria-label="Your name" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" aria-label="Your email" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" rows="5" placeholder="Your Message" aria-label="Your message" required></textarea>
+        </div>
+        <input type="text" name="company" class="hidden-field">
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Your Name. All rights reserved.</p>
+</footer>
+
+<script src="script.js" defer></script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Your Name",
+  "description": "Agriculture student and AgriTech enthusiast",
+  "jobTitle": "AgriTech Student",
+  "url": "https://yourdomain.com"
+}
+</script>
+
+</body>
+</html>

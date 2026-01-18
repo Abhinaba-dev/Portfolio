@@ -193,20 +193,22 @@ h1,h2,h3 {
     box-shadow:0 8px 20px rgba(0,0,0,0.18);
 }
 
-.contact-form {
-    max-width:500px;
-    margin:2.5rem auto 0;
+.contact-simple {
+    max-width: 500px;
+    margin: 2rem auto 0;
 }
 
-.contact-form input,
-.contact-form textarea {
-    width:100%;
-    padding:0.9rem;
-    margin-bottom:1rem;
-    border-radius:14px;
-    background:var(--card-bg);
-    border:1px solid rgba(255,255,255,0.25);
-    color:var(--text-main);
+.contact-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-links a {
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
 }
 
 .hidden-field { display:none; }

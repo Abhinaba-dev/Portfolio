@@ -352,7 +352,7 @@ nav li {
 @media (max-width: 768px) {
 
     .hero {
-    flex-direction:row;
+    flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     padding: 2rem 1.5rem;

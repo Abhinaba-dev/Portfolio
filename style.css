@@ -360,6 +360,7 @@ nav li {
 
   .hero-image {
     order: 0;
+    flex-direction: ;
     margin-bottom: 1.5rem;
   }
 

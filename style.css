@@ -101,7 +101,7 @@ html {
 body {
     background: var(--bg-main);
     color: var(--text-main);
-    line-height: 1.7;
+    
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
     cursor: none;

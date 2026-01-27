@@ -33,130 +33,228 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav class="navbar" role="navigation">
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
-    <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu">
-        <span></span><span></span><span></span>
-    </label>
+<!-- Loading Screen -->
+<div id="loading-screen">
+    <div class="loader"></div>
+</div>
 
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#timeline">Journey</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Approach Me</a></li>
-    </ul>
+<!-- Scroll Progress -->
+<div id="scroll-progress"></div>
+
+<!-- Custom Cursor -->
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<!-- Particle Background -->
+<div id="particles-js"></div>
+
+<!-- Back to Top Button -->
+<button id="back-to-top" aria-label="Back to top"></button>
+
+<nav role="navigation">
+    <div class="navbar">
+        <div class="logo">AC</div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-hamburger" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </label>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#timeline">Journey</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 </nav>
 
 <main id="main-content">
 
 <section id="home" class="hero">
     <div class="hero-container">
-        <div class="hero-text">
-            <h1>Hi, I'm <span >Abhinaba Chatterjee</span></h1>
-            <h3>Agriculture Student • Web Developer • Cybersecurity Enthusiast</h3>
+        <div class="hero-text reveal">
+            <h1>Hi, I'm <span>Abhinaba Chatterjee</span></h1>
+            <h3><span class="typing-text">Agriculture Student</span> • Web Developer • Cybersecurity Enthusiast</h3>
             <p class="about-text">
-                I am a 2nd year B. Sc. Agriculture Student. I am a self-taught web Developer
-                currently learning Python. I also have a keen interest in cybersecurity. I work 
-                at the intersection of agriculture and technology, building smart, sustainable, 
-                and data-driven farming solutions.
+                I am a 2nd year B. Sc. Agriculture Student working at the intersection of
+                agriculture and technology. I build smart, sustainable, and data-driven farming
+                solutions while exploring the realms of web development and cybersecurity.
             </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
         </div>
 
-        <div class="hero-image">
-            <img src="assets/profile.jpg" alt="Profile Picture">
+        <div class="hero-image reveal floating">
+            <img src="assets/profile.jpg" alt="Abhinaba Chatterjee - Agriculture Student & Developer">
         </div>
     </div>
 </section>
 
 <section id="skills" class="section light">
-    <h2>Skills</h2>
+    <h2 class="reveal">Skills & Expertise</h2>
     <div class="skills-grid">
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>🌾 Agriculture</h3>
             <ul>
                 <li>Irrigation Management (Learning)</li>
                 <li>Crop Water Requirement</li>
                 <li>Soil & Climate Basics (Learning)</li>
+                <li>Sustainable Farming Practices</li>
             </ul>
         </div>
 
-        <div class="skill-card">
+        <div class="skill-card reveal">
             <h3>⚙️ Technology</h3>
             <ul>
                 <li>Python (Learning)</li>
-                <li>Web Development</li>
+                <li>Web Development (HTML, CSS, JS)</li>
                 <li>AgriTech Systems (Research)</li>
+                <li>Data Analysis Basics</li>
             </ul>
         </div>
 
-        <div class="skill-card">
-            <h3>🛠 Tools</h3>
+        <div class="skill-card reveal">
+            <h3>🛠 Tools & Frameworks</h3>
             <ul>
                 <li>FastAPI (Learning)</li>
                 <li>Git & GitHub</li>
-                <li>Data Analysis Basics</li>
+                <li>VS Code</li>
+                <li>Modern Web Technologies</li>
             </ul>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="stats-grid">
+        <div class="stat-card reveal">
+            <div class="stat-number" data-value="2">0</div>
+            <div class="stat-label">Years in Agriculture</div>
+        </div>
+        <div class="stat-card reveal">
+            <div class="stat-number" data-value="5" data-suffix="+">0+</div>
+            <div class="stat-label">Technologies Learning</div>
+        </div>
+        <div class="stat-card reveal">
+            <div class="stat-number" data-value="1" data-suffix="+">0+</div>
+            <div class="stat-label">Active Projects</div>
+        </div>
+        <div class="stat-card reveal">
+            <div class="stat-number" data-value="100" data-suffix="%">0%</div>
+            <div class="stat-label">Passion & Dedication</div>
         </div>
     </div>
 </section>
 
 <section id="timeline" class="section">
-    <h2>My Journey</h2>
+    <h2 class="reveal">My Journey</h2>
     <div class="timeline">
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
             <span class="timeline-dot"></span>
             <div class="timeline-content">
-                <h3>Started Programming</h3>
-                <p>Learning Python and web development.</p>
+                <h3>🚀 Started Programming</h3>
+                <p>Began my journey into web development and Python programming, driven by curiosity and passion for technology.</p>
             </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
             <span class="timeline-dot"></span>
             <div class="timeline-content">
-                <h3>Agriculture Student</h3>
-                <p>Studying core agricultural sciences and sustainability.</p>
+                <h3>🎓 Agriculture Student</h3>
+                <p>Pursuing B. Sc. Agriculture, studying core agricultural sciences, sustainability, and modern farming techniques.</p>
             </div>
         </div>
 
-        <div class="timeline-item">
+        <div class="timeline-item reveal">
             <span class="timeline-dot"></span>
             <div class="timeline-content">
-                <h3>AgriTech Projects</h3>
-                <p>Working on smart irrigation and data-driven solutions.</p>
+                <h3>🌱 AgriTech Projects</h3>
+                <p>Working on innovative smart irrigation systems and data-driven agricultural solutions to revolutionize farming.</p>
+            </div>
+        </div>
+
+        <div class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="timeline-content">
+                <h3>🔐 Cybersecurity Interest</h3>
+                <p>Exploring cybersecurity fundamentals to build secure and robust agricultural technology solutions.</p>
             </div>
         </div>
     </div>
 </section>
 
 <section id="projects" class="section light">
-    <h2>Projects</h2>
+    <h2 class="reveal">Featured Projects</h2>
     <div class="projects-grid">
-        <div class="project-card">
-            <h3>Agri-mentoring platform(In development) </h3>
-            <p>Providing farmers and agriculturists easy access to farming discussions.</p>
+        <div class="project-card reveal">
+            <h3>🌾 Agri-Mentoring Platform</h3>
+            <p>An innovative platform connecting farmers and agricultural experts for knowledge sharing, discussions, and mentorship in modern farming practices.</p>
+            <div class="project-tags">
+                <span class="tag">Web Development</span>
+                <span class="tag">Community</span>
+                <span class="tag">AgriTech</span>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <h3>💧 Smart Irrigation System</h3>
+            <p>Research project focused on developing intelligent irrigation management systems using sensor data and crop water requirement analysis.</p>
+            <div class="project-tags">
+                <span class="tag">IoT</span>
+                <span class="tag">Python</span>
+                <span class="tag">Research</span>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
+            <h3>📊 Agricultural Data Analytics</h3>
+            <p>Exploring data-driven approaches to optimize farming decisions, crop yields, and resource management through modern analytics.</p>
+            <div class="project-tags">
+                <span class="tag">Data Science</span>
+                <span class="tag">Analytics</span>
+                <span class="tag">Learning</span>
+            </div>
         </div>
     </div>
 </section>
 
 <footer class="site-footer" id="contact">
-  <p class="footer-intent">
-    How to approach me
-  </p>
+    <p class="footer-intent">Let's Connect & Collaborate</p>
+    <p style="color: var(--text-muted); margin-bottom: 2rem;">
+        Interested in AgriTech, web development, or just want to chat? Feel free to reach out!
+    </p>
 
-  <nav class="footer-links">
-    <a href="mailto:xtpl.abhi@example.com" class="footer-btn">Email</a>
+    <div class="footer-links">
+        <a href="mailto:xtpl.abhi@example.com" class="footer-btn">
+            <span>📧 Email</span>
+        </a>
+        <a href="https://github.com/Abhinaba-dev" target="_blank" rel="noopener noreferrer" class="footer-btn">
+            <span>💻 GitHub</span>
+        </a>
+        <a href="https://linkedin.com/in/Abhinaba Chatterjee" target="_blank" rel="noopener noreferrer" class="footer-btn">
+            <span>💼 LinkedIn</span>
+        </a>
+    </div>
 
-    <a href="https://github.com/Abhinaba-dev" target="_blank" class="footer-btn">GitHub</a>
-    
-    <a href="https://linkedin.com/in/Abhinaba Chatterjee" target="_blank" class="footer-btn">LinkedIn</a>
-  </nav>
+    <p style="margin-top: 3rem; color: var(--text-muted); font-size: 0.9rem;">
+        © 2026 Abhinaba Chatterjee. Built with passion for agriculture and technology.
+    </p>
 </footer>
+
+<!-- Particles.js Library -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
